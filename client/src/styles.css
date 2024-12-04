@@ -1,0 +1,141 @@
+/* Base Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #74b9ff, #a29bfe, #55efc4);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-size: 200% 200%;
+  animation: gradientMove 10s infinite;
+}
+
+#App {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dff9fb;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Card Styling */
+.form-container, .list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  width: 320px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.card h2 {
+  color: #ffeaa7;
+}
+
+.card input, .card select, .card button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card input:focus, .card select:focus {
+  border: 2px solid #0984e3;
+}
+
+.card button {
+  background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #00cec9, #81ecec);
+}
+
+/* Buttons Styling */
+.btn {
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #fd79a8, #e84393);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #e17055, #fdcb6e);
+}
+
+.btn-success {
+  background: linear-gradient(45deg, #55efc4, #00b894);
+}
+
+.btn-success:hover {
+  background: linear-gradient(45deg, #00cec9, #74b9ff);
+}
+
+.btn-secondary {
+  background: linear-gradient(45deg, #74b9ff, #0984e3);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(45deg, #6c5ce7, #d63031);
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  color: #2d3436;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Background Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
